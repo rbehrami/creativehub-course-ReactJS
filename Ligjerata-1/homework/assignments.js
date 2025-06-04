@@ -28,4 +28,55 @@ console.log(`${celsius}°C is equal with ${fahrenheit}°F.`);
 celsius = 10;
 fahrenheit = (celsius * conversionFactor) + 32;
 console.log(`${celsius}°C is equal with ${fahrenheit}°F.`);
+console.log("=====================End Assignmet 2====================")
 //=========================================================================================
+
+//3. Create a simple inventory system for a store that tracks product quantities. Choose the appropriate variable types for the product quantities and a fixed tax rate. Update the product quantities as if customers are buying products and print the results.
+
+//Declaring a variable to store tax rate (tax rate does not change)
+const fixedTaxRate = 0.18; //this mean 18%
+
+//Inventory quantities in the store
+let apple = 20;
+let lemon = 15;
+let cherry = 22;
+let banana = 35;
+
+//print the quantity to see
+console.log("Quantity for each product")
+console.log("Apples: ", apple);
+console.log("Lemons: ", lemon);
+console.log("Cherries: ", cherry);
+console.log("Bananas: ", banana);
+
+//Products sold out
+let appleSoldOut = 5;
+let lemonSoldOut = 6;
+let cherySoldOut = 2;
+let bananaSoldOut = 8;
+
+//Uptade Inventory
+apple -= appleSoldOut;
+lemon -= lemonSoldOut;
+cherry -= cherySoldOut;
+banana -= bananaSoldOut;
+
+//Print products after updated
+console.log("Quantity for each product after updated")
+console.log("Apples: ", apple);
+console.log("Lemons: ", lemon);
+console.log("Cherries: ", cherry);
+console.log("Bananas: ", banana);
+
+//set a price for a product
+let applePrice = 1.8;
+let lemonPrice = 0.8;
+let cherriePrice = 8;
+let bananaPrice = 1.20;
+
+let subtotalSale = (apple*applePrice)+(lemon*lemonPrice)+(cherry*cherriePrice)+(banana*bananaPrice);
+let taxRate = subtotalSale * fixedTaxRate;
+let totalSum = subtotalSale+taxRate;
+console.log("Total sale without tax: ", subtotalSale);
+console.log("Tax sum: ", taxRate);
+console.log("Total Sum with tax: ", totalSum);
