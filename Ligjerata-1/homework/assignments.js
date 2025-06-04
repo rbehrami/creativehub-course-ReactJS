@@ -113,3 +113,4 @@ console.log("My Favorit Car: ", favoritCar);
 console.log("My Favorit Job: ", favoritJob); //updated
 console.log("My Favorit Food: ", favoritFood);
 console.log("My Favorit Place: ", favoritPlace);
+
