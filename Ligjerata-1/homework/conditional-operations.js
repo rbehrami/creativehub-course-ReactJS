@@ -79,3 +79,24 @@ switch(day){
     default:
         console.log("Your entry day is invalid");
 };
+
+
+
+// 5. Write a program that assigns roles based on a person's input. Use a switch statement
+//  to assign a role to a user (e.g., "admin", "editor", "viewer"). Include a default case for
+//  any invalid role input.
+
+let role = "editor";
+switch(role){
+    case "admin":
+        console.log("Welcome Admin! You have full access");
+        break;
+    case "editor":
+        console.log("Welcome Editor! You can edit content");
+        break;
+    case "viewer":
+        console.log("Welcome Viewer! You can view content");
+        break;
+    default:
+        console.log("Invalid role. Please enter admin, editor, or viewer.");
+}
