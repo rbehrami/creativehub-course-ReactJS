@@ -25,3 +25,37 @@ let quantity = "10"; //this data type is string
 let total = price * quantity;
 console.log("Total Price: ", total);
 
+
+// 2. Create a program that performs different operations on various data types. Experiment
+//  with how JavaScript handles arithmetic, string concatenation, and boolean logic when
+//  working with different types of values. You can also demonstrate what happens when
+//  you try to add or subtract values of incompatible types
+
+//Arithmetic
+let num1 = 10;
+let num2 = 15;
+console.log("Addition: ", num1+num2);
+console.log("Subtraction: ", num1-num2);
+console.log("Multiplication: ", num1*num2);
+console.log("Division: ", num1/num2);
+
+//String concatenation
+let myCity = "Prishtine";
+const message = "Mire se vini ne";
+const tempMessage = "Temperatura aktuale eshte";
+let localTime = 22;
+const celsiusSymbol = "°C";
+
+const result = message + " " + myCity +", " + tempMessage + " " + localTime +celsiusSymbol ;
+console.log(result);
+
+//Boolean logic
+let isoverEighten = true;
+let hasDriverLicence = false;
+console.log("Is over 18 and has a driver’s license: ",isoverEighten && hasDriverLicence); // to be true, both of them should be true.
+console.log("Is over 18 and has a driver’s license: ", isoverEighten || hasDriverLicence); // to be true one of them should be true.
+
+// Adding incompatible types
+console.log("String type + Boolean type:", "JavaScript is fun: " + true);
+console.log("Number + String:", 80 - "50"); //here happens type coercion for string "50"
+
