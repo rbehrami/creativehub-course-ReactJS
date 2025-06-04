@@ -38,3 +38,22 @@ if(scorePoints >=90){
 }else{
     console.log(`Your grade is F. You have failed`);
 }
+
+
+// 3. Write a program that determines if a person is eligible for a driving license. First,
+//  check if the person is old enough (18 or older). If they are, check if they passed a
+//  driving test. Use nested conditionals (if inside another if) to handle this scenario.
+
+let candidatAge = 19;
+let passedTest = false;
+if(candidatAge >=18) {
+    console.log(`Candidat is ${candidatAge} years old. It is eligible for a driving license`);
+    if(passedTest){
+        console.log(`Candidat status for passing test is ${passedTest}`);
+    }else{
+        console.log("You are old enough, but you need to pass the driving test.");
+    }
+}else {
+    // Age requirement not met
+    console.log("You are not eligible. You must be at least 18 years old.");
+}
