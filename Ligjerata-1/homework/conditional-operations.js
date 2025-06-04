@@ -57,3 +57,25 @@ if(candidatAge >=18) {
     // Age requirement not met
     console.log("You are not eligible. You must be at least 18 years old.");
 }
+
+
+// 4. Create a program that asks for the day of the week and prints whether it's a weekday
+//  or the weekend using a switch statement.
+
+let day = "Saturday";
+
+switch(day){
+    case "Monday":
+    case "Tuesday":
+    case "Wednesday":
+    case "Thursday":
+    case "Friday":
+        console.log(`${day} is a weekday`);
+        break;
+    case "Saturday":
+    case "Sunday":
+         console.log(`${day} is a weekend`);
+        break;
+    default:
+        console.log("Your entry day is invalid");
+};
