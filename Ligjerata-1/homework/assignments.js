@@ -13,3 +13,19 @@ console.log("My name: ", fullName);
 console.log("My age: ", age);
 console.log("My job: ", job);
 console.log("My fun fact: ", funFact);
+
+//=========================================================================================
+//2. Write a program that converts temperatures from Celsius to Fahrenheit. Choose a suitable type of variable for the conversion factor and the Celsius temperature. Display the result of the conversion and then modify the Celsius value to perform another conversion.
+//we have a formula to convert Celsius to Fahrenheit Fahrenheit = (Celsius x 9/5) + 32
+//For example we have 25 Celsius and we want to convert into Fahrenheit
+
+const conversionFactor = 9/5;
+let celsius = 25;
+let fahrenheit = (celsius * conversionFactor) + 32; 
+console.log(`${celsius}°C is equal with ${fahrenheit}°F.`);
+
+//Modify celsius value to perform another conversion
+celsius = 10;
+fahrenheit = (celsius * conversionFactor) + 32;
+console.log(`${celsius}°C is equal with ${fahrenheit}°F.`);
+//=========================================================================================
