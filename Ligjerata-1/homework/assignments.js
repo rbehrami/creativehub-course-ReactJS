@@ -80,3 +80,36 @@ let totalSum = subtotalSale+taxRate;
 console.log("Total sale without tax: ", subtotalSale);
 console.log("Tax sum: ", taxRate);
 console.log("Total Sum with tax: ", totalSum);
+
+console.log("=========================== End of Assignmet 3 ==================================")
+
+console.log("---- Assignment 4 ---- \n")
+// 4. Write a program that stores a list of your favorite things. Decide which favorites are likely to change and which are not. Update one of the values during the program and print the list before and after the change.
+
+//List of my favorit things
+
+const favoritSport = "Football"; // this will not change
+const favoritColor = "Dark Blue"; // this will not change
+let favoritCar = "BMW"; //this can be changed later
+let favoritJob = "Network Administrator"; //this can be changed later
+let favoritFood = "Pizza"; //this can be changed later
+let favoritPlace = "Saranda"; //this can be changed later
+
+//Print all original my favorit things
+console.log("My Favorit Sport: ", favoritSport);
+console.log("My Favorit Color: ", favoritColor);
+console.log("My Favorit Car: ", favoritCar);
+console.log("My Favorit Job: ", favoritJob);
+console.log("My Favorit Food: ", favoritFood);
+console.log("My Favorit Place: ", favoritPlace);
+
+console.log("After updated variable favoritJob")
+//value of variable favoritJob will be updated
+favoritJob = "Front End Developer";
+
+console.log("My Favorit Sport: ", favoritSport);
+console.log("My Favorit Color: ", favoritColor);
+console.log("My Favorit Car: ", favoritCar);
+console.log("My Favorit Job: ", favoritJob); //updated
+console.log("My Favorit Food: ", favoritFood);
+console.log("My Favorit Place: ", favoritPlace);
