@@ -1,0 +1,21 @@
+.footer-content-main{
+    text-align: left;
+}
+.footer-content-main p{
+    font-size: 0.8rem;
+    margin: 10px 0;
+    
+}
+.footer-content-main a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-content-main a:hover{
+    color: #6053ee;
+}
+.footer-main-title{
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}

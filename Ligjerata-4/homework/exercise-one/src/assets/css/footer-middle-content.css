@@ -1,0 +1,25 @@
+.footer-middle-content {
+  display: flex;
+
+
+}
+.footer-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.footer-main-content img{
+    width: 28px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.footer-feature-title{
+    margin-right: 15px;
+    color: gray;
+    font-weight: 600;
+}

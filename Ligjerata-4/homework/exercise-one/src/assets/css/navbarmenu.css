@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-left{
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.navbar-center .nav-links{
+    display: flex;
+    list-style: none;
+}
+.navbar-center .nav-links li{
+    margin-left: 1rem;
+}
+.nav-links a{
+  color: black;
+  font-weight: 400;
+}
+
+.header-background {
+  height: 100vh;
+  background-image: url('https://www.adobe.com/homepage/media_1babc08c0941b67a737c17c8205a784f2c95d5547.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 890px;
+  width: 100%;
+  z-index: -5;
+}

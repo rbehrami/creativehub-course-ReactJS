@@ -1,0 +1,153 @@
+.card1{
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+.card1-title{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.card2{
+    background: red;
+    color: white;
+    border-radius: 20px;
+}
+
+.card3{
+    background-color: #e7e4e4;
+    border-radius: 20px;
+}
+.card3-header-bg{
+    padding: 1px;
+    border-radius: 20px 20px 0 0;
+    background: #de52a8;
+    background: linear-gradient(171deg,rgba(222, 82, 168, 1) 0%, rgba(190, 45, 235, 1) 60%, rgba(188, 48, 219, 1) 100%);
+}
+.card3-paragraph{
+    color: white;
+    font-weight: 600;
+}
+.card3-main{
+    margin-top: 10px;
+    text-align: left;
+    padding: 20px;
+}
+.card3-title{
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+.card3-text{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.card3-text a{
+    color: black;
+}
+.card3-text a:hover{
+    text-decoration: underline;
+}
+.card4{
+    background: #e7e2e2;
+    border-radius: 20px;
+}
+.card4-text a{
+    color: black;
+}
+.card4-intro{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: black;
+}
+.card5{
+    background: #8965f5;
+    border-radius: 20px;
+}
+.card5-title{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.card5-paragraph{
+    font-size: 1.1rem;
+    color: white;
+}
+.card6{
+    background-color: #e7e4e4;
+    border-radius: 20px;
+}
+.card6-header{
+    background-color: black;
+    padding: 25px;
+    text-align: left;
+    border-radius: 20px 20px 0 0;
+}
+.card6-header h3{
+    color: white;
+}
+.card6-title{
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 1px;
+}
+.card6-intro{
+  color: black; 
+  font-size: 1.1rem; 
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card6-body{
+   text-align: left; 
+   padding: 20px;
+}
+.card6-paragraph{
+    font-size: 1rem;
+}
+.read-story{
+    font-size: 0.9rem;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.read-story a{
+    color: black;
+}
+.read-story a:hover{
+    text-decoration: underline;
+}
+.space-up-down{
+    margin: 15px 0;
+}
+.card-content{
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.card-content a{
+    text-decoration: none;
+    color: white;
+}
+.card-paragraph{
+    font-size: 1.1rem;
+}
+.learn-more{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.card-content a:hover{
+    text-decoration: underline;
+}
+.card-intro{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+}
