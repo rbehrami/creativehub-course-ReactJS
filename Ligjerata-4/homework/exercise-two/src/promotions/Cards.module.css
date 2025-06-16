@@ -1,0 +1,25 @@
+.card{
+    align-items: stretch; /* use stretch for equal height of all cards */
+    max-width: 100%;
+}
+.cardtitle{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+.cardparagraph{
+    font-size:1rem;
+}
+.button{
+    background-color: #005ca5;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+}
+.linktoCheck{
+    color: blue;
+    margin-top: 20px;
+    text-decoration: underline;
+}
