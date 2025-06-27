@@ -24,9 +24,9 @@ function Savetolocal() {
       <h1 className="text-4xl font-bold mb-6 text-indigo-700">Counter App</h1>
       <div className="text-6xl mb-6 text-indigo-900">{count}</div>
       <div className="space-x-4">
-        <button onClick={decreaseNumber} className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-xl text-xl">−</button>
-        <button onClick={resetNumber} className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-xl text-xl">Reset</button>
-        <button onClick={increaseNumber} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-xl text-xl">+</button>
+        <button onClick={decreaseNumber} className="bg-yellow-500 hover:bg-red-600 text-white px-6 py-2 text-xl cursor-pointer">−</button>
+        <button onClick={resetNumber} className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 text-xl cursor-pointer">Reset</button>
+        <button onClick={increaseNumber} className="bg-blue-500 hover:bg-green-600 text-white px-6 py-2 text-xl cursor-pointer">+</button>
       </div>
     </div>
   )
