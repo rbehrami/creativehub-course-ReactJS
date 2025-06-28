@@ -1,49 +1,40 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 
 function Stopwatch() {
-  const secondsRef = useRef(0);     
+  const timeRef = useRef(0);
   const intervalRef = useRef(null);
   const displayRef = useRef(null);
 
-  const startTimer = () => {
-    if (intervalRef.current !== null) return;
+  const start = () => {
+    if (intervalRef.current) return;
 
     intervalRef.current = setInterval(() => {
-      secondsRef.current += 1;
-
-      if (displayRef.current) {
-        displayRef.current.textContent = `${secondsRef.current} seconds`;
-      }
+      timeRef.current++;
+      displayRef.current.innerText = timeRef.current + ' seconds';
     }, 1000);
   };
 
-  const stopTimer = () => {
+  const stop = () => {
     clearInterval(intervalRef.current);
     intervalRef.current = null;
   };
 
-  const resetTimer = () => {
-    stopTimer();
-    secondsRef.current = 0;
-
-    if (displayRef.current) {
-      displayRef.current.textContent = '0 seconds';
-    }
+  const reset = () => {
+    stop();
+    timeRef.current = 0;
+    displayRef.current.innerText = '0 second';
   };
 
-  useEffect(() => {
-    return () => clearInterval(intervalRef.current);
-  }, []);
-
   return (
-    <div className="text-center py-20">
-      <h1 className="text-3xl font-bold mb-4">Stopwatch</h1>
-      <p ref={displayRef} className="text-4xl text-blue-600 mb-6">0 seconds</p>
+    <div className="text-center  py-15">
+      <h2 className="text-3xl font-bold mb-4">Stopwatch</h2>
+      <p className="text-2xl mb-4" ref={displayRef}>0 second</p>
       <div className="space-x-4">
-        <button onClick={startTimer} className="bg-green-500 text-white px-4 py-2 rounded">Start</button>
-        <button onClick={stopTimer} className="bg-red-500 text-white px-4 py-2 rounded">Stop</button>
-        <button onClick={resetTimer} className="bg-yellow-500 text-white px-4 py-2 rounded">Reset</button>
+        <button onClick={start} className="bg-green-500 text-white mt-5 px-4 py-2 rounded cursor-pointer">Start</button>
+        <button onClick={stop} className="bg-yellow-500 text-white px-4 py-2 rounded cursor-pointer">Stop</button>
+        <button onClick={reset} className="bg-red-500 text-white px-4 py-2 rounded cursor-pointer">Reset</button>
       </div>
+      
     </div>
   );
 }
