@@ -15,7 +15,9 @@ function LastKeyPressed() {
   }, []);
 
   return (
-    <div className='flex border border-solid justify-center items-center py-15 mt-20 h-20 text-2xl text-blue-500'>
+    <>
+    <div className='py-15'>
+      <div className='flex border border-solid justify-center items-center py-15 text-2xl text-blue-500'>
       <h2>Last Key Pressed:</h2>
       {lastKeyPressed ? (
         <p className='ms-5'>"{lastKeyPressed}"</p>
@@ -23,6 +25,9 @@ function LastKeyPressed() {
         <p className='ms-5'>Press a key in the keyboard.</p>
       )}
     </div>
+    </div>
+    </>
+    
   );
 }
 

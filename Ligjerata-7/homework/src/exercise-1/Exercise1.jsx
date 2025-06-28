@@ -8,6 +8,13 @@ const Exercise1 = () => {
   inputRef.current.focus();
  },[])
 
+  const keepFocus = () => {
+    // Delay helps avoid interrupting default click behavior
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
+  };
+
   return (
     <div>
        

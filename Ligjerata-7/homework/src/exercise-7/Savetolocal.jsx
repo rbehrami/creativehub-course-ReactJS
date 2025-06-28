@@ -20,7 +20,9 @@ function Savetolocal() {
  const resetNumber = () => setCount(0);
 
   return (
-     <div className="container mx-auto  flex flex-col w-xl mb-20 py-15 items-center justify-center bg-gray-100">
+    <>
+  <div className='py-15'>
+    <div className="container mx-auto  flex flex-col w-xl mb-20 py-15 items-center justify-center bg-gray-100">
       <h1 className="text-4xl font-bold mb-6 text-indigo-700">Counter App</h1>
       <div className="text-6xl mb-6 text-indigo-900">{count}</div>
       <div className="space-x-4">
@@ -29,6 +31,8 @@ function Savetolocal() {
         <button onClick={increaseNumber} className="bg-blue-500 hover:bg-green-600 text-white px-6 py-2 text-xl cursor-pointer">+</button>
       </div>
     </div>
+  </div>
+    </>    
   )
 }
 

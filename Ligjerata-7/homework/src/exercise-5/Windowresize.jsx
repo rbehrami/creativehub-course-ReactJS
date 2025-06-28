@@ -19,9 +19,13 @@ const Windowresize = () => {
 
 
   return (
-    <div className="flex border border-solid justify-center items-center py-15 mt-20 h-20 text-2xl text-red-500">
+    <>
+    <div className='py-15'>
+        <div className="flex border border-solid justify-center items-cente py-20 text-2xl text-red-500">
         <h2 className="px-40">Window width: {width}</h2>
     </div>
+    </div>
+    </>
   )
 }
 
