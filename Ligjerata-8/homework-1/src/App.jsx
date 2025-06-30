@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './App.css'
 import Header from './Components/Header/Navbar'
 import Hero from './Components/Hero/Hero'
-import { ListaMeKategori } from './Components/KategoriList'
+import { ListaMeKategori } from './Components/Kategorit/KategoriList'
 import { CardContent } from './Components/cards/CardContent'
 import FaqjaKategorit from './Components/Kategorit/FaqjaKategorit'
 import ProduktDetajet from './Components/Produktet/ProduktDetajet'

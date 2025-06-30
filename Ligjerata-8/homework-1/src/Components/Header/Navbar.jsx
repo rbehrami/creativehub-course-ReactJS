@@ -1,6 +1,6 @@
 import React from 'react';
 import logoIcon from '../../assets/icon.svg';
-import KategoritDropDown from '../KategoritDropDown';
+import KategoritDropDown from '../Kategorit/KategoritDropDown';
 import { FcGoogle } from "react-icons/fc";
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/* Right side: Links / Buttons */}
         <div className="flex items-center gap-6">
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-black"><KategoritDropDown /></a>
+          <button type="button" className="text-left text-sm font-medium text-gray-700 hover:text-black"><KategoritDropDown /></button>
           <button className="flex flex-row items-center gap-2 bg-gray-200 text-black px-4 py-1.5 rounded-xl text-sm hover:bg-blue-700">
             <FcGoogle />Kyçu me Google
           </button>

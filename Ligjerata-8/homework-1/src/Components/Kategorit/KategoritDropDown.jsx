@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { AiOutlineDown } from "react-icons/ai";
-import { ListaMeKategori } from './KategoriList';
+import { ListaMeKategori } from '../Kategorit/KategoriList';
 
 const KategoritDropDown = () => {
     const [open, setOpen] = useState(false);

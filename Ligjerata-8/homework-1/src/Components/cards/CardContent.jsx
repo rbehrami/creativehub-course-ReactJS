@@ -1,4 +1,4 @@
-import { ListaMeKategori } from "../KategoriList"
+import { ListaMeKategori } from "../Kategorit/KategoriList"
 import imageForSale from '../../assets/forsale.jpg'
 import { FcRight } from "react-icons/fc";
 import Card from './Card'

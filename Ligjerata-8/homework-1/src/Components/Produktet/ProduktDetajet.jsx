@@ -1,16 +1,17 @@
 import { useParams, useLocation } from 'react-router-dom';
+import {produktet} from '../../data/produktet'
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
 import { CiPhone } from "react-icons/ci";
+
+const slugify = (text) => 
+  text.toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 
 const ProduktDetajet = () => {
   const { emri } = useParams();
   const location = useLocation();
 
-  // Try to get produkt from location.state
   const produktFromState = location.state?.produkt;
-
-  // If not found in state, fallback to searching produktet array by slug (optional)
   const produkt = produktFromState || produktet.find(p => slugify(p.emri) === emri);
 
   if (!produkt) {
@@ -37,8 +38,8 @@ const ProduktDetajet = () => {
         <div className='flex gap-5'>
           <img src="https://merrfal.com/placeholders/no-avatar.png" className='w-12 rounded-4xl' alt="" />
           <div className='block'>
-            <p class="text-[15.5px] flex items-center">{produkt.dhensi}</p>
-            <span class="text-[13px] font-normal text-gray-500 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 -ml-[3.5px] h-4 w-4 flex-shrink-0 text-gray-400"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path></svg> {produkt.lokacioni}</span>
+            <p className="text-[15.5px] flex items-center">{produkt.dhensi}</p>
+            <span className="text-[13px] font-normal text-gray-500 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="mr-1 -ml-[3.5px] h-4 w-4 flex-shrink-0 text-gray-400"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path></svg> {produkt.lokacioni}</span>
           </div>
         </div>
       </div>
